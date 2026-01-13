@@ -76,3 +76,25 @@ h2 {
 .bottombar a.active {
   color: #1f6fff;
 }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn {
+  background: #1f6fff;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #1f6fff;
+  border: 2px solid #1f6fff;
+}
+
