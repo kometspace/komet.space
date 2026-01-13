@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Changelog • Project Leo</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <button class="burger" type="button" onclick="toast('Меню: позже')">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="brand-title">Project Leo</div>
+      </div>
+
+      <div class="top-actions">
+        <button class="btn-outline" type="button" onclick="toast('Вход: позже')">Войти</button>
+        <button class="star" type="button" onclick="toast('Избранное: позже')">
+          <i class="fas fa-star"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="h1">Changelog</div>
+    <p class="sub">История обновлений сайта/ключей</p>
+
+    <div class="card">
+      <div class="section-title">v1.0</div>
+      <ul class="list">
+        <li>Добавлена вкладка «Ключи»</li>
+        <li>Добавлена покупка через Gumroad (ссылка)</li>
+        <li>Добавлена страница активации ключа</li>
+        <li>Сохранение ключа строго целиком (ny_2026 ≠ ny)</li>
+      </ul>
+    </div>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <nav class="bottom-nav">
+    <div class="bottom-inner">
+      <a class="nav-item" data-page="home" href="index.html"><i class="fas fa-house"></i><span>Главная</span></a>
+      <a class="nav-item" data-page="keys" href="keys.html"><i class="fas fa-key"></i><span>Ключи</span></a>
+      <a class="nav-item" data-page="profile" href="profile.html"><i class="fas fa-user"></i><span>Профиль</span></a>
+    </div>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
