@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Komet Space</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Leo Space</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body data-page="home">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <button class="burger" type="button" onclick="toast('Меню: позже')">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="brand-title">Project Leo</div>
+      </div>
 
-<!-- HEADER -->
-<header class="topbar">
-  <div class="menu">☰</div>
-  <div class="logo">Комета</div>
-  <div class="star">⭐</div>
-</header>
+      <div class="top-actions">
+        <button class="btn-outline" type="button" onclick="toast('Вход: позже')">Войти</button>
+        <button class="star" type="button" onclick="toast('Избранное: позже')">
+          <i class="fas fa-star"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<!-- CONTENT -->
-<main class="content">
-  <h2>DLC НА МОБИЛЬНЫЕ ИГРЫ</h2>
+  <main class="container">
+    <div class="h1">Space</div>
+    <p class="sub">Тут будет каталог, новости и система ключей.</p>
 
-  <div class="grid">
-    <div class="card">Roblox</div>
-    <div class="card">STANDLEO</div>
-    <div class="card">PUBG</div>
-    <div class="card">Black Russia</div>
-    <div class="card">BlockPost</div>
-    <div class="card">Forward Assault</div>
-    <div class="card">Oxide</div>
-    <div class="card">Hide Online</div>
-    <div class="card">Online-RP</div>
-    <div class="card">Free Fire</div>
-    <div class="card">Standoff 2</div>
-  </div>
-</main>
+    <div class="card">
+      <div class="section-title">Быстрые действия</div>
+      <div class="key-actions">
+        <a class="btn-primary" href="keys.html" style="display:grid;place-items:center;text-decoration:none;">Перейти в ключи</a>
+        <a class="btn-ghost" href="changelog.html" style="display:grid;place-items:center;text-decoration:none;">Changelog</a>
+      </div>
 
-<!-- BOTTOM NAV -->
+      <div class="small-note">
+        ⚠️ GitHub Pages — без сервера. Активация хранит ключ локально на устройстве (localStorage).
+      </div>
+    </div>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <nav class="bottom-nav">
+    <div class="bottom-inner">
+      <a class="nav-item" data-page="home" href="index.html"><i class="fas fa-house"></i><span>Главная</span></a>
+      <a class="nav-item" data-page="keys" href="keys.html"><i class="fas fa-key"></i><span>Ключи</span></a>
+      <a class="nav-item" data-page="profile" href="profile.html"><i class="fas fa-user"></i><span>Профиль</span></a>
+    </div>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html><!-- BOTTOM NAV -->
 <nav class="bottombar">
   <a class="active">🏠<span>Главная</span></a>
   <a href="catalog.html">🔍<span>Каталог</span></a>
